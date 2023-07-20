@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #EFE1D1;
+    /* overflow: hidden; */
+
+}
+
+nav {
+    display: flex;
+    height: 70px;
+    width: 100%;
+    background-color: #331D2C;
+    /* color: aliceblue; */
+}
+
+.nav1 {
+    width: 50%;
+    font-size: 2rem;
+    text-align: center;
+    padding: 12px;
+
+
+}
+
+
+.nav2 {
+    text-align: center;
+
+
+}
+
+ul {
+    display: flex;
+    text-align: center;
+    padding-top: 12px;
+    justify-content: space-evenly;
+}
+
+
+ul li {
+    padding: 12px 37px;
+    /* color: red; */
+    font-size: 1.1rem;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* box */
+.box {
+    background-color: #3F2E3E;
+    height: 477px;
+    width: 100%;
+    display: flex;
+    /* color: black; */
+}
+
+
+.box1 {
+    width: 50%;
+    /* height: 55vh; */
+
+    /* color: aliceblue; */
+}
+
+.box2 {
+
+    width: 50%;
+
+}
+
+div.name {
+    font-size: 2rem;
+    margin-top: 162px;
+    margin-left: 214px;
+}
+
+
+p {
+    height: 10%;
+    width: 50%;
+    text-align: left;
+    margin-left: 13.5rem;
+    margin-top: -0.1rem;
+
+}
+
+img {
+    height: 55%;
+    width: 38%;
+    padding-top: 94px;
+    padding-left: 71px;
+
+    background-color: rgb(63, 46, 62);
+}
+
+
+/* container */
+.container {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* color: black; */
+    background-color: #3F2E3E;
+}
+
+.cont {
+    border: 2px solid white;
+    border-radius: 15px;
+    text-align: center;
+    width: calc((100%/3)-20px);
+    height: 100px;
+    margin-top: 50px;
+}
+
+.para {
+    text-align: center;
+}
+
+@media (min-width:1000px) and (max-width:1450px) {
+    .nav1 {
+        font-size: 1.5rem;
+    }
+
+    .cont {
+        margin-top: 0px;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+
+    div.name{
+        margin-left: 35px;
+        margin-top: 100px;
+    }
+    .container {
+
+        height: 70%;
+    }
+
+    .nav1 {
+        width: 50%;
+        padding: 0%;
+    }
+    p{
+        margin-left: 35px;
+    }
+
+}
+@media only screen and (max-width:592px){
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav1{
+        font-size: 1.5rem;
+    width: 100%;
+ 
+    }
+    ul li{
+        padding: 0;
+        font-size: 1rem;
+    }
+    .box{
+        display: flex;
+        flex-direction: column;
+        height: 524px;
+    }
+    
+    div.name {
+        width: 100%;
+      
+    }
+    img{
+        width: 100%;
+    }
+    p{
+        width: 100%;
+    }
+}
